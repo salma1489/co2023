@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+console.log(new Date());
+//alert(new Date());
+
+function ThumbsUp() {
+    document.getElementById('myImg').src ="https://img.freepik.com/free-icon/good_318-112157.jpg?t=st=1676963597~exp=1676964197~hmac=edbfe54d3536abecf7e095e784fb504777b55342126c6b280561280eac35bfca";
+}
+function ThumbsDown() {
+    document.getElementById("myImg").src = "https://img.freepik.com/free-icon/thumbs-down-silhouette_318-41911.jpg?t=st=1676963760~exp=1676964360~hmac=2c85e4dcab2c8464e076c09148abc52c7afd38ec7490836663c9ecfd1deab3e9";
+}
+function navigatetoNextPage() {
+    localStorage.setItem("id", "0909090");
+    window.location.href = './home.html';
+}
+    </script>
+</head>
+
+<body>
+    <p>hello world</p>
+    <div class="maincontainer">
+    <img src ="https://img.freepik.com/free-icon/good_318-112157.jpg?t=st=1676963597~exp=1676964197~hmac=edbfe54d3536abecf7e095e784fb504777b55342126c6b280561280eac35bfca" id="myImg" alt=""/>
+    </div>
+    <button style="background-color: bisque" onclick="thumbsup()">
+        ThumbsUp
+    </button>
+    <button style="background-color: bisque; color: blue"
+        onclick="navigatetoNextPage()">
+        Go to Next Page
+    </button>
+    <button style="background-color: blueviolet" onclick="thumbsDown()">
+        Thumbs Down
+    </button>
+</div>
+</div>
+</body>
+
+<footer></footer>
+</html>

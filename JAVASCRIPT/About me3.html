@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script type="text/javascript"
+        src="index.js">
+    </script>
+</head>
+
+<body>
+    
+    <button onclick="f()">
+    Click me to get Applicant Information and Data
+    </button>
+
+    <div>
+        <p id="text" style="color: blue;
+        font-weight: bold;font-size: 20px;">
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        function f() {
+            var name = Applicant .name;
+            var surname = Applicant .surname;
+            var age = Applicant .age
+            var email = Applicant .email;
+            var address = Applicant .address;
+            var bio = Applicant .bio;
+            var education = Applicant .education;
+
+            var str = "Name:" + name 
+            + "\nSurname: "
+                   + surname 
+                   + "\nAge:"
+                    + age 
+                   + "\nEmail: " 
+                   + email 
+                    + "\nAddres:"
+                   + address 
+                   + "\nBio:"
+                    + bio
+                    +"\nEducation:"
+                    +education
+
+            document.getElementById(
+                'text').innerHTML = str;
+        }
+        </script>
+        </body>
+        </html>
+    
+    
